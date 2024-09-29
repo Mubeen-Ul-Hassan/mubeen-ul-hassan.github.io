@@ -21,7 +21,7 @@ export default function Main() {
     <div>
       {articles.map(({ title, description, date }, index) => (
         <div key={index} className="pb-4 cursor-pointer">
-          <h1 className="underline decoration-1 hover:decoration-neutral-500 transition-all ease-in-out delay-75 duration-150">
+          <h1 className="underline decoration-wavy decoration-3 hover:decoration-neutral-500 transition-all ease-in-out delay-75 duration-150">
             {title}
           </h1>
           <div className="flex justify-between text-sm text-neutral-500">

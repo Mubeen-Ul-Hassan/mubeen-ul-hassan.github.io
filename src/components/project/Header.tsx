@@ -7,12 +7,12 @@ export default () => (
         <RiPencilRuler2Fill className="h-8 w-8" />
       </div>
     </div>
-    <div className="mt-6 text-base">
+    <div className="mt-3 sm:mt-6 sm:text-base text-sm">
       <h1 className="animate-intro font-medium">Project</h1>
       <h2 className="animate-intro [animation-delay:100ms]">
         Experiment laboratory
       </h2>
     </div>
-    <hr className="my-6 animate-intro border-neutral-200 [animation-delay:150ms] dark:border-neutral-800" />
+    <hr className="my-3 sm:my-6 animate-intro border-neutral-200 [animation-delay:150ms] dark:border-neutral-800" />
   </header>
 );

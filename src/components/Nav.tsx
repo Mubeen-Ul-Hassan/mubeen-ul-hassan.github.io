@@ -14,13 +14,13 @@ export default () => {
 
   return (
     <nav className="fixed bottom-10 flex justify-center w-screen">
-      <div className="flex justify-center items-center bg-neutral-800/85 py-2.5 px-4 rounded-full *:cursor-pointer backdrop-blur-sm shadow-[0_24px_14px_#00000020,0_0_0_1px_rgba(38,38,38,0.75),0_4px_1 0px_#00000040] border border-neutral-600 text-neutral-50">
+      <div className="flex justify-center items-center bg-neutral-800/85 py-2 sm:py-2.5 px-2 sm:px-4 rounded-full *:cursor-pointer backdrop-blur-sm shadow-[0_24px_14px_#00000020,0_0_0_1px_rgba(38,38,38,0.75),0_4px_1 0px_#00000040] border border-neutral-600 text-neutral-50">
         {tabs.map(({ title, href }, index) => (
           <Link
             href={href}
             key={index}
             className={clsx(
-              "text-neutral-500 hover:bg-neutral-50/30 rounded-full transition-colors ease-in-out delay-150 duration-400 py-1.5 px-3.5 hover:text-white text-sm",
+              "text-neutral-500 hover:bg-neutral-50/30 rounded-full transition-colors ease-in-out delay-150 duration-400 py-1.5 px-2.5 sm:px-3.5 hover:text-white text-sm",
               pathname === href
                 ? "text-white underline underline-offset-4"
                 : "text-neutral-500"

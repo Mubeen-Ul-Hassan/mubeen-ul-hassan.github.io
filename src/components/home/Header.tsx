@@ -21,20 +21,20 @@ export default function Header() {
   return (
     <header className="text-white">
       <Headshot />
-      <div className="mt-6 font-medium text-base">
+      <div className="mt-3 sm:mt-6 sm:font-medium sm:text-base text-sm">
         <h1 className="animate-intro">Mubeen Ul Hassan</h1>
-        <div className="flex justify-between">
+        <div className="flex sm:justify-between sm:flex-row flex-col gap-y-2">
           <h1 className="animate-intro">
             Software Engineer And Open Source Contributor
           </h1>
-          <div className="flex gap-x-2 items-center text-gray-500 text-lg hover:*:text-gray-400 hover:*:cursor-pointer">
+          <div className="flex gap-x-2 items-center">
             {socials.map(({ icon, label, href }, index) => (
               <a
                 href={href}
                 key={index}
                 aria-label={label}
                 target="_blank"
-                className="transition-colors"
+                className="transition-colors cursor-pointer sm:text-xl text-lg text-neutral-500 hover:text-neutral-400"
               >
                 {icon}
               </a>
@@ -42,7 +42,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <hr className="my-6 animate-intro border-neutral-800 " />
+      <hr className="my-3 sm:my-6 animate-intro border-neutral-800 " />
     </header>
   );
 }

@@ -1,35 +1,29 @@
-const articles = [
-  {
-    title: "Thesus Store",
-    description: "Accessible command new component.",
-    date: "07/02/24",
-  },
-  {
-    title: "Craft",
-    description: "Interaction design laboratory.",
-    date: "06/28/24",
-  },
-  {
-    title: "React Pointer",
-    description: "Lighweight custom cursor for React.",
-    date: "02/22/24",
-  },
-];
+import Link from "next/link";
 
-export default function Main() {
+export interface Projects {
+  title: string;
+  description: string;
+  href: string;
+  date: string;
+}
+
+export default function Main({ projects }: { projects: Projects[] }) {
   return (
     <div>
-      {articles.map(({ title, description, date }, index) => (
-        <div key={index} className="pb-4 cursor-pointer">
-          <h1 className="underline decoration-1 hover:decoration-neutral-500 transition-all ease-in-out delay-75 duration-150">
-            {title}
-          </h1>
-          <div className="flex justify-between text-sm text-neutral-500">
-            <h1>{description}</h1>
-            <h1>{date}</h1>
+      {projects &&
+        projects.map(({ title, description, href, date }, index) => (
+          <div key={index} className="pb-4 cursor-pointer">
+            <Link href={href} target="_blank">
+              <h1 className="underline decoration-wavy decoration-3 hover:decoration-neutral-500 transition-all ease-in-out delay-75 duration-150">
+                {title}
+              </h1>
+              <div className="flex justify-between text-sm text-neutral-500">
+                <h1 className="w-10/12">{description}</h1>
+                <h1>{date}</h1>
+              </div>
+            </Link>
           </div>
-        </div>
-      ))}
+        ))}
     </div>
   );
 }
