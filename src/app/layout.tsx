@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased z-[-2] h-screen bg-[#171717] scroll-smooth`}
+        className={`${inter.className} antialiased z-[-2] h-screen bg-[#171717] scroll-smooth scrollbar`}
       >
         <div className="w-full sm:w-[560px] mx-auto pt-7 px-3 sm:px-0 sm:pt-16 text-white">
           {children}

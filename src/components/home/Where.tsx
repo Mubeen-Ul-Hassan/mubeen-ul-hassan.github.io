@@ -6,15 +6,13 @@ import { FaLocationDot } from "react-icons/fa6";
 export default function Where() {
   return (
     <div className="pb-28">
-      <div className="pb-2 sm:pb-5 pt-48 sm:pt-64 flex gap-x-2 items-center">
+      <div className="pb-2 sm:pb-5 pt-[12.5rem] sm:pt-64 flex gap-x-2 items-center">
         <h1 className="font-medium text-base">Where</h1>
         {/* <FaMapLocationDot className="text-lg text-gray-500" /> */}
       </div>
       <div className="relative w-full h-full">
         <Image
-          src={"/geo-dark.png"}
-          // width={330}
-          // height={325}
+          src={"./geo-dark.png"}
           width={560}
           height={325}
           layout="responsive"
@@ -22,9 +20,6 @@ export default function Where() {
           alt="Pakistan"
           className="rounded-lg sm:w-[560px] sm:h-[325px]"
         />
-
-        {/* Group this both */}
-        {/* This work great small screen but break for large screen */}
         <div className="absolute top-[28%] right-[24%] sm:top-24 sm:right-32">
           <div className="flex justify-center items-center">
             <div className="w-14 h-14 bg-blue-500 rounded-full animate-ping opacity-85 duration-7000 delay-15000"></div>

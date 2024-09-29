@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <header className="text-white">
       <Headshot />
-      <div className="mt-3 sm:mt-6 sm:font-medium sm:text-base text-sm">
+      <div className="mt-3 sm:mt-6 sm:font-medium sm:text-base text-sm transition-all ease-in-out delay-150 duration-500">
         <h1 className="animate-intro">Mubeen Ul Hassan</h1>
         <div className="flex sm:justify-between sm:flex-row flex-col gap-y-2">
           <h1 className="animate-intro">
@@ -42,7 +42,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <hr className="my-3 sm:my-6 animate-intro border-neutral-800 " />
+      <hr className="my-3 sm:my-6 animate-intro border-neutral-800 transition-all ease-in-out delay-150 duration-500 " />
     </header>
   );
 }
@@ -51,7 +51,7 @@ const Headshot = () => {
   return (
     <div>
       <Image
-        src={"/profile.jpg"}
+        src={"./profile.jpg"}
         width={45}
         height={45}
         alt="My face"
